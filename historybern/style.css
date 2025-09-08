@@ -8,14 +8,12 @@
             background-color: #f4f4f4;
         }
 
-        /* --- Main Layout --- */
         .container {
             display: flex;
             height: 100vh;
             overflow: hidden; 
         }
 
-        /* --- Sidebar Styles --- */
         .sidebar {
             width: 16rem;
             flex-shrink: 0;
@@ -23,38 +21,20 @@
             padding: 1rem;
         }
 
-        /* --- Main Content Styles --- */
-        .main-content {
+        .mainContent {
             flex-grow: 1;
-            padding: 1rem;
             overflow-y: auto; 
             background-color: #e9e9e9;
         }
         
-        /* --- General Content Styles --- */
         .card {
             background-color: #fff;
             padding: 1rem;
         }
         
-        .section-box {
+        .box {
             padding: 0.5rem;
             background-color: #f9f9f9;
             margin-bottom: 0.5rem;
         }
         
-        /* --- Responsive Design for Smaller Screens --- */
-        @media (max-width: 767px) {
-            .container {
-                flex-direction: column;
-                height: auto;
-                overflow: visible;
-            }
-            .sidebar {
-                width: 100%;
-                height: auto; 
-            }
-            .main-content {
-                overflow-y: visible; 
-            }
-        }
