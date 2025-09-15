@@ -1,0 +1,129 @@
+<html><head>
+    <meta author="X">
+    <meta title="Short description of Bern">
+    <style>
+        /* This is the style for the whole page */
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            background: #f8f9fa;
+        }
+        /* This is the main container that holds everything */
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+        }
+        /* This is the sidebar on the left */
+        .sidebar {
+            width: 200px;
+            background: #e0e0e0;
+            border-right: 2px solid #bdbdbd;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        /* This is the sidebar on the right */
+        .sidebar-right {
+            width: 200px;
+            background: #e0e0e0;
+            border-left: 2px solid #bdbdbd;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+        /* This is the main content area */
+        .main-content {
+            flex: 1;
+            padding:40px;
+            background: #fff;
+        }
+        /* Headings and stuff */
+        .h1 {
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .h2 {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .h3 {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .subheading {
+            font-size: 20px;
+            font-weight: bold;
+            color: lightslategray;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        /* Just some extra style for lists */
+        ul, ol {
+            margin-left: 30px;
+        }
+        /* Infobox style */
+        .infobox {
+            background: #f5f5f5;
+            border: 1px solid #bfc8d1;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+        /* Links */
+        a {
+            color: #0645ad;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <div class="sidebar">
+            <div class="infobox">
+                <strong>Sidebar</strong>
+                <p>The sidebar works.</p>
+             
+            </div>
+            
+        </div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1 class="h1">History of Bern</h1>
+            <h2 class="h2">Overview</h2>
+            <p class="subheading">Bern, the capital city of Switzerland, has a rich history dating back to the 12th century.</p>
+
+            <div>
+                <h3 class="h3" id="history">History</h3>
+                <p>Founded in 1191 by Duke Berthold V of Zähringen, Bern was established as a strategic military outpost. The city's name is believed to be derived from the German word "Bär," meaning bear, which is also reflected in its coat of arms. Over the centuries, Bern grew in importance and became a significant political and economic center in the region.
+
+In the 13th century, Bern joined the Swiss Confederation, which helped to solidify its status as a key player in Swiss politics. The city played a crucial role during the Reformation in the 16th century, adopting Protestantism and becoming a center for religious and cultural change.
+
+Throughout the 18th and 19th centuries, Bern continued to develop, with significant advancements in infrastructure, education, and governance. The city became the federal city of Switzerland in 1848 when the Swiss Constitution was adopted, further cementing its role as the nation's capital.
+
+Today, Bern is known for its well-preserved medieval architecture, including the iconic Zytglogge clock tower and the Federal Palace. The city's rich history is celebrated through various museums, cultural events, and historical sites that attract visitors from around the world.</p>
+            </div>
+        </div>
+        <!-- Right Sidebar -->
+        <div class="sidebar-right">
+            <div class="infobox">
+                <strong>Sidebar</strong>
+                <p>The sidebar works.</p>
+          
+            </div>
+            
+        </div>
+    </div>
+</body></html>
