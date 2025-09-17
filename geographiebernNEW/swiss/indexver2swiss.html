@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de-ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="X">
+    <meta name="description" content="Churzi Beschreibung vo Bern">
+    <title>Geographie vo Bern</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            background: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 200px;
+            background: #e0e0e0;
+            border-right: 2px solid #bdbdbd;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar-right {
+            width: 200px;
+            background: #e0e0e0;
+            border-left: 2px solid #bdbdbd;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background: #fff;
+        }
+
+        .banner {
+            width: 100%;
+            height: 250px;
+            background-image: url("aa.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            padding: 15px 30px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .subheading {
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main-content>div {
+            background: #fdfdfd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hills-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .hills-image {
+            flex: 1 1 300px;
+            height: 350px;
+            width: 300px;
+            border-radius: 10px;
+            background-image: url("b.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hills-text {
+            flex: 1 1 300px;
+        }
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-section img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .infobox {
+            background: #f5f5f5;
+            border: 1px solid #bfc8d1;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+
+        .sidebar-link {
+            display: block;
+            padding: 5px 0;
+            color: #0645ad;
+            text-decoration: none;
+        }
+
+        .sidebar-link:hover,
+        .sidebar-link:active {
+            color: white;
+            background-color: #0645ad;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="infobox">
+                <strong>D Sidebar</strong>
+                <a href="../french/indexver2.html" class="sidebar-link">French Version</a>
+                <a href="../english/indexver2engl.html" class="sidebar-link">English version</a>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="banner">
+                <h1>Geographie vo Bern</h1>
+            </div>
+
+            <h2 class="h2">Churzi Beschreibung vo Bern</h2>
+            <p class="subheading">E Üebersicht vo d'Lag und s'Wätter i Bern</p>
+
+            <div class="hills-section">
+                <div class="hills-image"></div>
+                <div class="hills-text">
+                    <div>
+                        <h3 class="h3" id="location">Lag</h3>
+                        <p>Bern liggt uf em Schwizberet, im Kanton Bern, chli westlich vom Zentrum und rund 20 km
+                            nördlich vo de Berner Alpen.</p>
+                    </div>
+                    <div>
+                        <h3 class="h3" id="landscape">Landschaftsformig</h3>
+                        <p>D Umgebung isch vo Glaziere während dr letschte Eisziit formt worde.</p>
+                    </div>
+                    <div>
+                        <h3 class="h3" id="hills">Umgebendi Hügel</h3>
+                        <p>Zwei chliini Bärge präge d'Landschaft:</p>
+                        <ol>
+                            <li>Gurten (858 Meter)</li>
+                            <li>Bantiger (947 Meter)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="h3" id="topography">Stadt-Topografie</h3>
+                <p>D Stadt het sech zerscht uf ere Halbinsel entwicklet, wo vo dr Aare umflosse wird. Das het
+                    d'natürlechi Erweiterig bis ins 19. Jh. limitiert.</p>
+            </div>
+
+            <div>
+                <h3 class="h3" id="altitude">Höhendifferenze</h3>
+                <p>D Gelände vo Bern isch sehr unregelmässig: Es git mehri Meter Differenze zwüsche Quartier nahe bi dr
+                    Aare und höcherliggendi Quartier.</p>
+            </div>
+
+            <div>
+                <h3 class="h3" id="area">Fläche und Bodennutzung</h3>
+                <p>Bern deckt 51,6 km² ab, verteilt wie folgt:</p>
+                <ul>
+                    <li>20,2 % Landwirtschaft</li>
+                    <li>33,5 % Wäld</li>
+                    <li>44,2 % städtisch (Gebäude und Strasse)</li>
+                    <li>2,1 % unproduktiv (Flüsse oder Gletscher)</li>
+                </ul>
+            </div>
+
+            <div class="grid-section">
+                <div class="item">
+                    <img src="beee.png" alt="Bild 1">
+                    <h3 class="h3">Stadt-Topografie</h3>
+                    <p>D Stadt het sech uf ere Halbinsel entwicklet, wo vo dr Aare umflosse wird.</p>
+                </div>
+
+                <div class="item">
+                    <img src="bc.png" alt="Bild 2">
+                    <h3 class="h3">Höhendifferenze</h3>
+                    <p>D Gelände vo Bern zeigt deutliche Unterschiede zwüsche tiefere und höhere Quartier.</p>
+                </div>
+
+                <div class="item">
+                    <img src="b.jpg" alt="Bild 3">
+                    <h3 class="h3">Wätter</h3>
+                    <p>Bern het e ozeanischs Klima (Köppen Cfb).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <div class="infobox">
+                <strong>D Sidebar</strong>
+                <p>D Sidebar funktioniert.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

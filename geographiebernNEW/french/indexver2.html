@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="X">
+    <meta name="description" content="Courte description de Berne">
+    <title>La géographie de Berne</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 0;
+            background: #f8f9fa;
+        }
+
+        /* Conteneur principal */
+        .container {
+            display: flex;
+            flex-direction: row;
+            min-height: 100vh;
+        }
+
+        /* Sidebar gauche */
+        .sidebar {
+            width: 200px;
+            background: #e0e0e0;
+            border-right: 2px solid #bdbdbd;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        /* Sidebar droite */
+        .sidebar-right {
+            width: 200px;
+            background: #e0e0e0;
+            border-left: 2px solid #bdbdbd;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        /* Contenu principal modernisé */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background: #fff;
+        }
+
+        /* Bannière dans main-content */
+        .banner {
+            width: 100%;
+            /* prend toute la largeur du main-content */
+            height: 250px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("aa.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .banner h1 {
+            font-size: 2.5rem;
+            padding: 15px 30px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Titres et sous-titres */
+        .h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #333;
+        }
+
+        .subheading {
+            font-size: 1rem;
+            color: #555;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .main-content>div {
+            background: #fdfdfd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hills-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .hills-image {
+            flex: 1 1 300px;
+            height: 350px;
+            width: 300px;
+            border-radius: 10px;
+            background-image: url("b.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hills-text {
+            flex: 1 1 300px;
+        }
+
+        .grid-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-section img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        }
+
+        .infobox {
+            background: #f5f5f5;
+            border: 1px solid #bfc8d1;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+
+        /* Lien sidebar */
+        .sidebar-link {
+            display: block;
+            padding: 5px 0;
+            color: #0645ad;
+            text-decoration: none;
+        }
+
+        .sidebar-link:hover,
+        .sidebar-link:active {
+            color: white;
+            background-color: #0645ad;
+            border-radius: 5px;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar gauche -->
+        <div class="sidebar">
+            <div class="infobox">
+                <strong>La sidebar</strong>
+                <!-- Lien vers Swiss -->
+                <a href="../swiss/indexver2swiss.html" class="sidebar-link">Swiss german version</a>
+                <a href="../english/indexver2engl.hmtl" class="sidebar-link">English Version</a>
+            </div>
+        </div>
+
+        <!-- Contenu principal -->
+        <div class="main-content">
+            <div class="banner">
+                <h1>La géographie de Berne</h1>
+            </div>
+
+            <h2 class="h2">Une courte description de Berne</h2>
+            <p class="subheading">Un aperçu de la localisation et du climat de Berne</p>
+
+            <div class="hills-section">
+                <div class="hills-image"></div>
+                <div class="hills-text">
+                    <div>
+                        <h3 class="h3" id="location">Localisation</h3>
+                        <p>Berne est située sur le plateau suisse, dans le canton de Berne, légèrement à l'ouest du
+                            centre du pays et à environ 20 km au nord des Alpes bernoises.</p>
+                    </div>
+                    <div>
+                        <h3 class="h3" id="landscape">Formation du paysage</h3>
+                        <p>Le paysage environnant a été façonné par des glaciers pendant la dernière période glaciaire.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="h3" id="hills">Collines environnantes</h3>
+                        <p>Deux petites montagnes façonnent le paysage environnant :</p>
+                        <ol>
+                            <li>Le Gurten (858 mètres)</li>
+                            <li>Le Bantiger (947 mètres)</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="h3" id="topography">Topographie urbaine</h3>
+                <p>La ville s'est initialement développée sur une péninsule formée par un méandre de la rivière Aare,
+                    ce qui a limité son expansion naturelle jusqu'au 19ème siècle, lorsque des ponts ont permis
+                    de s'étendre au-delà de la rivière.</p>
+            </div>
+
+            <div>
+                <h3 class="h3" id="altitude">Différences d'altitude</h3>
+                <p>Le terrain urbain de Berne est assez irrégulier : il existe des différences d'altitude de plusieurs
+                    dizaines de mètres entre les quartiers proches de la rivière et ceux situés à des altitudes plus
+                    élevées.</p>
+            </div>
+
+            <div>
+                <h3 class="h3" id="area">Superficie et utilisation des sols</h3>
+                <p>Berne couvre une superficie totale de 51,6 km², répartie comme suit :</p>
+                <ul>
+                    <li>20,2 % terres agricoles</li>
+                    <li>33,5 % forêts</li>
+                    <li>44,2 % zones urbaines (bâtiments et routes)</li>
+                    <li>2,1 % non productif (rivières ou glaciers)</li>
+                </ul>
+            </div>
+
+            <!-- Section en grille -->
+            <div class="grid-section">
+                <div class="item">
+                    <img src="beee.png" alt="Image 1">
+                    <h3 class="h3">Topographie urbaine</h3>
+                    <p>La ville s'est initialement développée sur une péninsule formée par un méandre de la rivière
+                        Aare.</p>
+                </div>
+
+                <div class="item">
+                    <img src="bc.png" alt="Image 2">
+                    <h3 class="h3">Différences d'altitude</h3>
+                    <p>Le terrain urbain de Berne présente des différences marquées entre les zones basses et
+                        les quartiers plus élevés.</p>
+                </div>
+
+                <div class="item">
+                    <img src="b.jpg" alt="Image 3">
+                    <h3 class="h3">Climat</h3>
+                    <p>Berne possède un climat océanique (Köppen Cfb).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar droite -->
+        <div class="sidebar-right">
+            <div class="infobox">
+                <strong>La sidebar</strong>
+                <p>La barre latérale fonctionne.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
