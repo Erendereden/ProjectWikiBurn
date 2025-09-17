@@ -1,17 +1,13 @@
 <html><head>
     <meta author="X">
     <meta title="Short description of Bern">
-    <script>
-            function changeFont() {
-            var textElement = document.getElementById("FontChange");
-            textElement.style.fontFamily = 'Brush Script MT'; 
-        }
-</script>
     <style>
         /* This is the style for the whole page */
         body {
+            font-family: "Times New Roman", serif;
             margin: 0;
-            background: #f8f9fa;
+            background: #121212;
+            color: #e0e0e0;
         }
         /* This is the main container that holds everything */
         .container {
@@ -22,8 +18,8 @@
         /* This is the sidebar on the left */
         .sidebar {
             width: 200px;
-            background: #e0e0e0;
-            border-right: 2px solid #bdbdbd;
+            background: #282828;
+            border-right: 2px solid #424242;
             padding: 20px;
             position: sticky;
             top: 0;
@@ -33,8 +29,8 @@
         /* This is the sidebar on the right */
         .sidebar-right {
             width: 200px;
-            background: #e0e0e0;
-            border-left: 2px solid #bdbdbd;
+            background: #282828;
+            border-left: 2px solid #424242;
             padding: 20px;
             position: sticky;
             top: 0;
@@ -46,7 +42,7 @@
             flex: 1;
             padding:40px;
             overflow-y: auto;
-            background: #fff;
+            background: #1e1e1e;
         }
        
         /* Headings and stuff */
@@ -74,7 +70,7 @@
         .subheading {
             font-size: 20px;
             font-weight: bold;
-            color: lightslategray;
+            color: #9c9c9c;
             text-align: center;
             margin-bottom: 30px;
         }
@@ -84,15 +80,15 @@
         }
         /* Infobox style */
         .infobox {
-            background: #f5f5f5;
-            border: 1px solid #bfc8d1;
+            background: #2c2c2c;
+            border: 1px solid #4f4f4f;
             padding: 10px;
             margin-bottom: 20px;
             font-size: 1em;
         }
         /* Links */
         a {
-            color: #0645ad;
+            color: #90caf9;
             text-decoration: none;
         }
         a:hover {
@@ -102,10 +98,9 @@
     </style>
 </head>
 
-<body id="fontChange">
+<body>
     <div class="vector-header-container">   </div>
     <div class="container">
-        <!-- Left Sidebar -->
         <div class="sidebar">
             <div class="infobox">
                 <strong></strong>
@@ -116,14 +111,16 @@
             </div>
             
         </div>
-        <!-- Main Content -->
         <div class="main-content">
             <h1 class="h1">History of Bern</h1>
             <h2 class="h2">Overview</h2>
             <p class="subheading">Bern, the capital city of Switzerland, has a rich history dating back to the 12th century.</p>
 
             <div>
-<h2>History</h2>
+                <h3 class="h3" id="history">History</h3>
+
+                
+-----
 
 <p>Founded in 1191 by Duke Berthold V of Zähringen, Bern was established as a strategic military outpost. The city's name is believed to be derived from the German word "Bär," meaning bear, which is also reflected in its coat of arms. Over the centuries, Bern grew in importance and became a significant political and economic center in the region.
 
@@ -169,14 +166,11 @@ The closest weather station near Bern is located in the municipality of Zollikof
 There are 103.7 days of air frost, and 22.3 ice days per year at Bern (Zollikofen) for the period of 1981–2010, as well as 14.1 days of snowfall, 36.7 days of snow cover per year and the average amount of snow measured per year is 52.6 centimetres (20.7 in). On average, January is the coldest month, with a daily mean temperature of −0.4 °C (31.3 °F), and a daily minimum temperature of −3.6 °C (25.5 °F). The lowest temperature ever recorded at Bern (Zollikofen) was −23.0 °C (−9.4 °F), recorded in February 1929, and typically the coldest temperature of the year reaches an average of −12.8 °C (9.0 °F) for the period of 1981–2010.</p>
             </div>
         </div>
-        <!-- Right Sidebar -->
         <div class="sidebar-right">
             <div class="infobox">
                 <strong></strong>
                 <a href="geography.html">Link to other webpage</a>
-                <button type="button" onclick="changeFont()">Change Font</button>
             </div>
-
             
         </div>
     </div>

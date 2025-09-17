@@ -1,17 +1,13 @@
 <html><head>
     <meta author="X">
     <meta title="Short description of Bern">
-    <script>
-            function changeFont() {
-            var textElement = document.getElementById("FontChange");
-            textElement.style.fontFamily = 'Brush Script MT'; 
-        }
-</script>
     <style>
         /* This is the style for the whole page */
         body {
+            font-family: "Brush Script MT", serif;
             margin: 0;
-            background: #f8f9fa;
+            background: #121212;
+            color: #e0e0e0;
         }
         /* This is the main container that holds everything */
         .container {
@@ -102,7 +98,7 @@
     </style>
 </head>
 
-<body id="fontChange">
+<body>
     <div class="vector-header-container">   </div>
     <div class="container">
         <!-- Left Sidebar -->
@@ -123,7 +119,10 @@
             <p class="subheading">Bern, the capital city of Switzerland, has a rich history dating back to the 12th century.</p>
 
             <div>
-<h2>History</h2>
+                <h3 class="h3" id="history">History</h3>
+
+                
+-----
 
 <p>Founded in 1191 by Duke Berthold V of Zähringen, Bern was established as a strategic military outpost. The city's name is believed to be derived from the German word "Bär," meaning bear, which is also reflected in its coat of arms. Over the centuries, Bern grew in importance and became a significant political and economic center in the region.
 
@@ -174,9 +173,7 @@ There are 103.7 days of air frost, and 22.3 ice days per year at Bern (Zollikofe
             <div class="infobox">
                 <strong></strong>
                 <a href="geography.html">Link to other webpage</a>
-                <button type="button" onclick="changeFont()">Change Font</button>
             </div>
-
             
         </div>
     </div>
