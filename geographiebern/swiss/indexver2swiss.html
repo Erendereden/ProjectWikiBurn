@@ -6,16 +6,6 @@
     <meta name="author" content="X">
     <meta name="description" content="Churzi Beschreibung vo Bern">
     <title>Geographie vo Bern</title>
-
-    <!-- Script séparé -->
-    <script>
-        function changeFont() {
-            var textElement = document.getElementById("fontChange");
-            textElement.style.fontFamily = 'Brush Script MT';
-        }
-    </script>
-
-    <!-- Styles séparés -->
     <style>
         body {
             font-family: "Times New Roman", serif;
@@ -64,7 +54,7 @@
         .banner {
             width: 100%;
             height: 250px;
-            background-image: url("../pic/aa.jpg");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("aa.jpg");
             background-size: cover;
             background-position: center;
             display: flex;
@@ -82,12 +72,6 @@
             border-radius: 8px;
             background-color: rgba(0, 0, 0, 0.5);
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-
-        .vector-header-container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
         }
 
         .h2 {
@@ -112,6 +96,13 @@
             margin-bottom: 20px;
         }
 
+        .main-content>div {
+            background: #fdfdfd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
         .hills-section {
             display: flex;
             flex-wrap: wrap;
@@ -123,7 +114,7 @@
             height: 350px;
             width: 300px;
             border-radius: 10px;
-            background-image: url("../pic/b.jpg");
+            background-image: url("b.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -171,20 +162,12 @@
     </style>
 </head>
 
-<body id="fontChange">
-    <div class="vector-header-container"></div>
+<body>
     <div class="container">
-
-        <!-- Left Sidebar -->
         <div class="sidebar">
             <div class="infobox">
-                <strong></strong>
-                <p></p>
-                <img src="../pic/a.jpg" alt="City photo" style="width:100%;height:auto;">
-                <img src="../pic/aa.jpg" alt="City photo" style="width:100%;height:auto;">
-                <img src="../pic/b.jpg" alt="Center of city" style="width:100%;height:auto;">
-                <img src="../pic/bc.jpg" alt="Map of Switzerland" style="width:100%;height:auto;">
-                <img src="../pic/beee.jpg" alt="Map of Switzerland" style="width:100%;height:auto;">
+                <strong>D Sidebar</strong>
+                <a href="../french/indexver2.html" class="sidebar-link">French Version</a>
             </div>
         </div>
 
@@ -244,19 +227,19 @@
 
             <div class="grid-section">
                 <div class="item">
-                    <img src="../pic/beee.png" alt="Bild 1">
+                    <img src="beee.png" alt="Bild 1">
                     <h3 class="h3">Stadt-Topografie</h3>
                     <p>D Stadt het sech uf ere Halbinsel entwicklet, wo vo dr Aare umflosse wird.</p>
                 </div>
 
                 <div class="item">
-                    <img src="../pic/bc.png" alt="Bild 2">
+                    <img src="bc.png" alt="Bild 2">
                     <h3 class="h3">Höhendifferenze</h3>
                     <p>D Gelände vo Bern zeigt deutliche Unterschiede zwüsche tiefere und höhere Quartier.</p>
                 </div>
 
                 <div class="item">
-                    <img src="../pic/b.jpg" alt="Bild 3">
+                    <img src="b.jpg" alt="Bild 3">
                     <h3 class="h3">Wätter</h3>
                     <p>Bern het e ozeanischs Klima (Köppen Cfb).</p>
                 </div>
@@ -265,9 +248,8 @@
 
         <div class="sidebar-right">
             <div class="infobox">
-                <strong>Sidebar</strong>
-                <a href="../french/indexver2.html" class="sidebar-link">French Version</a>
-                <a href="../english/indexver2engl.html" class="sidebar-link">English version</a>
+                <strong>D Sidebar</strong>
+                <p>D Sidebar funktioniert.</p>
             </div>
         </div>
     </div>

@@ -6,6 +6,15 @@
     <meta name="author" content="X">
     <meta name="description" content="Courte description de Berne">
     <title>La géographie de Berne</title>
+
+    <!-- Script pour changer la police -->
+    <script>
+        function changeFont() {
+            var textElement = document.getElementById("fontChange");
+            textElement.style.fontFamily = 'Brush Script MT';
+        }
+    </script>
+
     <style>
         /* Style général */
         body {
@@ -58,9 +67,8 @@
         /* Bannière dans main-content */
         .banner {
             width: 100%;
-            /* prend toute la largeur du main-content */
             height: 250px;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("aa.jpg");
+            background-image: url("../pic/aa.jpg");
             background-size: cover;
             background-position: center;
             display: flex;
@@ -103,13 +111,6 @@
             margin-bottom: 20px;
         }
 
-        .main-content>div {
-            background: #fdfdfd;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
         .hills-section {
             display: flex;
             flex-wrap: wrap;
@@ -121,7 +122,7 @@
             height: 350px;
             width: 300px;
             border-radius: 10px;
-            background-image: url("b.jpg");
+            background-image: url("../pic/b.jpg");
             background-size: cover;
             background-position: center;
         }
@@ -170,15 +171,14 @@
     </style>
 </head>
 
-<body>
+<body id="fontChange">
     <div class="container">
         <!-- Sidebar gauche -->
         <div class="sidebar">
             <div class="infobox">
                 <strong>La sidebar</strong>
-                <!-- Lien vers Swiss -->
-                <a href="../swiss/indexver2swiss.html" class="sidebar-link">Swiss german version</a>
-                <a href="../english/indexver2engl.hmtl" class="sidebar-link">English Version</a>
+                <a href="../swiss/indexver2swiss.html" class="sidebar-link">Version Swiss german</a>
+                <a href="../english/indexver2engl.html" class="sidebar-link">Version anglaise</a>
             </div>
         </div>
 
@@ -197,7 +197,7 @@
                     <div>
                         <h3 class="h3" id="location">Localisation</h3>
                         <p>Berne est située sur le plateau suisse, dans le canton de Berne, légèrement à l'ouest du
-                            centre du pays et à environ 20 km au nord des Alpes bernoises.</p>
+                            centre et à environ 20 km au nord des Alpes bernoises.</p>
                     </div>
                     <div>
                         <h3 class="h3" id="landscape">Formation du paysage</h3>
@@ -206,7 +206,7 @@
                     </div>
                     <div>
                         <h3 class="h3" id="hills">Collines environnantes</h3>
-                        <p>Deux petites montagnes façonnent le paysage environnant :</p>
+                        <p>Deux petites montagnes façonnent le paysage :</p>
                         <ol>
                             <li>Le Gurten (858 mètres)</li>
                             <li>Le Bantiger (947 mètres)</li>
@@ -217,47 +217,42 @@
 
             <div>
                 <h3 class="h3" id="topography">Topographie urbaine</h3>
-                <p>La ville s'est initialement développée sur une péninsule formée par un méandre de la rivière Aare,
-                    ce qui a limité son expansion naturelle jusqu'au 19ème siècle, lorsque des ponts ont permis
-                    de s'étendre au-delà de la rivière.</p>
+                <p>La ville s'est initialement développée sur une péninsule formée par un méandre de la rivière Aare, ce
+                    qui a limité son expansion naturelle jusqu'au 19ème siècle.</p>
             </div>
 
             <div>
                 <h3 class="h3" id="altitude">Différences d'altitude</h3>
-                <p>Le terrain urbain de Berne est assez irrégulier : il existe des différences d'altitude de plusieurs
-                    dizaines de mètres entre les quartiers proches de la rivière et ceux situés à des altitudes plus
-                    élevées.</p>
+                <p>Le terrain de Berne est irrégulier : il existe des différences de plusieurs dizaines de mètres entre
+                    quartiers proches de la rivière et quartiers plus élevés.</p>
             </div>
 
             <div>
                 <h3 class="h3" id="area">Superficie et utilisation des sols</h3>
-                <p>Berne couvre une superficie totale de 51,6 km², répartie comme suit :</p>
+                <p>Berne couvre 51,6 km², répartie comme suit :</p>
                 <ul>
                     <li>20,2 % terres agricoles</li>
                     <li>33,5 % forêts</li>
-                    <li>44,2 % zones urbaines (bâtiments et routes)</li>
-                    <li>2,1 % non productif (rivières ou glaciers)</li>
+                    <li>44,2 % zones urbaines</li>
+                    <li>2,1 % non productif</li>
                 </ul>
             </div>
 
-            <!-- Section en grille -->
             <div class="grid-section">
                 <div class="item">
-                    <img src="beee.png" alt="Image 1">
+                    <img src="../pic/beee.png" alt="Topographie">
                     <h3 class="h3">Topographie urbaine</h3>
-                    <p>La ville s'est initialement développée sur une péninsule formée par un méandre de la rivière
-                        Aare.</p>
+                    <p>La ville s'est initialement développée sur une péninsule formée par un méandre de l'Aare.</p>
                 </div>
 
                 <div class="item">
-                    <img src="bc.png" alt="Image 2">
+                    <img src="../pic/bc.png" alt="Altitude">
                     <h3 class="h3">Différences d'altitude</h3>
-                    <p>Le terrain urbain de Berne présente des différences marquées entre les zones basses et
-                        les quartiers plus élevés.</p>
+                    <p>Des différences marquées existent entre zones basses et quartiers plus élevés.</p>
                 </div>
 
                 <div class="item">
-                    <img src="b.jpg" alt="Image 3">
+                    <img src="../pic/b.jpg" alt="Climat">
                     <h3 class="h3">Climat</h3>
                     <p>Berne possède un climat océanique (Köppen Cfb).</p>
                 </div>
@@ -267,8 +262,9 @@
         <!-- Sidebar droite -->
         <div class="sidebar-right">
             <div class="infobox">
-                <strong>La sidebar</strong>
-                <p>La barre latérale fonctionne.</p>
+                <strong>Navigation</strong>
+                <a href="../swiss/indexver2swiss.html" class="sidebar-link">Swiss german version</a>
+                <a href="../english/indexver2engl.html" class="sidebar-link">English version</a>
             </div>
         </div>
     </div>
