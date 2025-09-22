@@ -8,11 +8,25 @@
     <title>Geographie vo Bern</title>
 
     <!-- Script séparé -->
-    <script>
-        function changeFont() {
-            var textElement = document.getElementById("fontChange");
-            textElement.style.fontFamily = 'Brush Script MT';
+   <script>
+        // Store the default font family
+    var defaultFont = '';
+
+    function toggleFont(font, btn) {
+        var body = document.getElementById("FontChange");
+        // On first click, store the default font
+        if (!defaultFont) {
+            defaultFont = window.getComputedStyle(body).fontFamily;
         }
+        // Toggle: if current font is the selected one, revert to default
+        if (body.style.fontFamily === font) {
+            body.style.fontFamily = defaultFont;
+            btn.textContent = "Change Font to " + font.split(',')[0];
+        } else {
+            body.style.fontFamily = font;
+            btn.textContent = "Revert Font";
+        }
+    }
     </script>
 
     <!-- Styles séparés -->
@@ -269,8 +283,9 @@
                 <a href="../french/indexver2.html" class="sidebar-link">Version Francaise</a>
                 <a href="../english/indexver2engl.html" class="sidebar-link">English version</a>
                 </strong>
-                <button type="button" onclick="changeFont()">Change Font</button>
-            </div>
+                <button type="button" onclick="toggleFont('Brush Script MT, cursive', this)">Brush Script</button>
+                <button type="button" onclick="toggleFont('Arial, sans-serif', this)">Arial</button>
+                <button type="button" onclick="toggleFont('Times New Roman, serif', this)">Times New Roman</button>             </div>
 
         </div>
     </div>

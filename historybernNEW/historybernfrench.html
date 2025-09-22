@@ -4,10 +4,24 @@
     <meta author="X">
     <meta title="Short description of Bern">
     <script>
-        function changeFont() {
-            var textElement = document.getElementById("FontChange");
-            textElement.style.fontFamily = 'Brush Script MT';
+           // Store the default font family
+    var defaultFont = '';
+
+    function toggleFont(font, btn) {
+        var body = document.getElementById("FontChange");
+        // On first click, store the default font
+        if (!defaultFont) {
+            defaultFont = window.getComputedStyle(body).fontFamily;
         }
+        // Toggle: if current font is the selected one, revert to default
+        if (body.style.fontFamily === font) {
+            body.style.fontFamily = defaultFont;
+            btn.textContent = "Change Font to " + font.split(',')[0];
+        } else {
+            body.style.fontFamily = font;
+            btn.textContent = "Revert Font";
+        }
+    }
     </script>
     <style>
         /* This is the style for the whole page */
@@ -223,7 +237,9 @@
                     <a href="historybernswiss.html">Swiss Version</a>
                 </strong>
 
-                <button type="button" onclick="changeFont()">Change Font</button>
+               <button type="button" onclick="toggleFont('Brush Script MT, cursive', this)">Brush Script</button>
+                <button type="button" onclick="toggleFont('Arial, sans-serif', this)">Arial</button>
+                <button type="button" onclick="toggleFont('Times New Roman, serif', this)">Times New Roman</button> 
 
             </div>
 

@@ -152,6 +152,26 @@
             padding-left: 5px;
         }
     </style>
+    <script>
+        // Store the default font family
+    var defaultFont = '';
+
+    function toggleFont(font, btn) {
+        var body = document.getElementById("FontChange");
+        // On first click, store the default font
+        if (!defaultFont) {
+            defaultFont = window.getComputedStyle(body).fontFamily;
+        }
+        // Toggle: if current font is the selected one, revert to default
+        if (body.style.fontFamily === font) {
+            body.style.fontFamily = defaultFont;
+            btn.textContent = "Change Font to " + font.split(',')[0];
+        } else {
+            body.style.fontFamily = font;
+            btn.textContent = "Revert Font";
+        }
+    }
+    </script>
 </head>
 
 <body>
@@ -250,7 +270,9 @@
                 <a href="../french/indexver2.html" class="sidebar-link">Version Française</a>
                 <a href="../swiss/indexver2swiss.html" class="sidebar-link">Swiss German Version</a>
                 </strong>
-                <button type="button" onclick="changeFont()">Change Font</button>
+                <button type="button" onclick="toggleFont('Brush Script MT, cursive', this)">Brush Script</button>
+                <button type="button" onclick="toggleFont('Arial, sans-serif', this)">Arial</button>
+                <button type="button" onclick="toggleFont('Times New Roman, serif', this)">Times New Roman</button> 
             </div>
 
         </div>
